@@ -1,0 +1,17 @@
+cuantos=str(input("Hay otro vendedor, si o no")).lower()
+
+while cuantos=="si":
+  nombre=str(input("Introduce el nombre;")).lower()
+  salariob=float(input("Salario base:"))
+  ventas=float(input("Total de ventas:"))
+  if ventas < 3500:
+    sueldot=(ventas*0.7)+salariob
+  elif ventas>=3500 or ventas <=7000:
+    sueldot=(ventas*0.10)+salariob
+  elif ventas > 7000:
+    sueldot=(ventas*0.15)+salariob   
+  else:
+    sueldot=0
+  print(f"{nombre} tienes de saldo total",sueldot)
+  cuantos=str(input("Hay otro vendedor, si o no")).lower()
+  
