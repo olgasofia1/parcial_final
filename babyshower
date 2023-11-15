@@ -15,3 +15,26 @@ while cuantos=="si":
   print(f"{nombre} tienes de saldo total",sueldot)
   cuantos=str(input("Hay otro vendedor, si o no")).lower()
   
+pregunta = input("¿Hay otro animal para registrar?: ")
+acumulador = 0
+categoria2 = 0
+categoria3 = 0
+categoria4 = 0
+while pregunta == "si":
+  edad = int(input("¿Qué edad tiene?: "))
+  if edad < 2:  
+    print("El animal pertence a la categoría 1")
+    acumulador += 1
+  elif edad < 5 and edad >= 2:
+    print("El animal pertenece a la categoría 2")
+    categoria2 += 1
+  elif edad >= 5 and edad < 10:
+    print("El animal pertenece a la categoría 3")
+    categoria3 += 1
+  elif edad >= 10:
+    print("El animal pertenece a la categoría 4")
+    categoria4 += 1
+  else:
+    print ("no entra en ninguna categoría")
+  pregunta = input("¿Hay otro animal para registrar?: ")
+
